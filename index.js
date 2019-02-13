@@ -5,9 +5,8 @@ function driversWithRevenueOver(drivers, revenue) {
 }
 
 function driverNameWithRevenueOver(drivers, revenue) {
-  let driverNames = [];
-  driversWithRevenueOver(drivers, revenue).filter(function(driver) {
-    driverNames.push(driver.name);
-  });
-  return driverNames;
+  return driversWithRevenueOver(drivers, revenue)
+    .map(function(driver) {
+    return driver.name;
+    });
 }
