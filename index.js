@@ -6,7 +6,8 @@ function driversWithRevenueOver(drivers, revenue) {
 
 function driverNameWithRevenueOver(drivers, revenue) {
   let driverNames = [];
-  return driversWithRevenueOver(drivers).filter(function(driver) {
+  driversWithRevenueOver(drivers).filter(function(driver) {
     driverNames.push(driver.name);
   });
+  return driverNames;
 }
