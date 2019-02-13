@@ -11,6 +11,4 @@ function driverNamesWithRevenueOver(drivers, revenue) {
   });
 }
 
-function exactMatch() {
 
-};
