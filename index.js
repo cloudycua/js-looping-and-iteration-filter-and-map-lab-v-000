@@ -5,11 +5,8 @@ function driversWithRevenueOver(drivers, revenue) {
 }
 
 function driverNameWithRevenueOver(drivers, revenue) {
-  const driverNames = [];
-  debugger;
-  drivers.filter(function(driver) {
-    if (driver.revenue > revenue) {
-      driverNames.push(driver.name);
-    };
-  });
+  const newDrivers = [];
+  for (const name in driversWithRevenueOver(drivers, revenue)) {
+    newDrivers.push(name);
+  }
 }
