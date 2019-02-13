@@ -5,8 +5,8 @@ function driversWithRevenueOver(drivers, revenue) {
 }
 
 function driverNameWithRevenueOver(drivers, revenue) {
-  const newDrivers = [];
-  for (let name in driversWithRevenueOver(drivers, revenue)) {
-    newDrivers.push(name);
+  const driverNames = [];
+  for (let name in driversWithRevenueOver(drivers)) {
+    driverNames.push(name);
   }
 }
